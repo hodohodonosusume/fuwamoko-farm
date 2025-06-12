@@ -1,0 +1,109 @@
+body {
+  background: linear-gradient(180deg, #f8f0ff 0%, #e0f7fa 100%);
+  font-family: 'Rounded Mplus 1c', 'Arial Rounded MT Bold', 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+}
+#game-container {
+  background: #fff8fc;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(150,120,200,0.15);
+  padding: 16px 16px 32px 16px;
+  margin-top: 32px;
+  width: 430px;
+  min-height: 700px;
+  position: relative;
+}
+h1 {
+  text-align: center;
+  color: #b388ff;
+  font-size: 2.2em;
+  margin-bottom: 8px;
+  letter-spacing: 0.1em;
+}
+#game-canvas {
+  display: block;
+  margin: 0 auto 12px auto;
+  background: #e3f2fd;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px #b3e5fc88;
+}
+#ui {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+#coin-display {
+  font-weight: bold;
+  color: #ffb300;
+  font-size: 1.2em;
+}
+button {
+  background: #ffd6ec;
+  border: none;
+  border-radius: 12px;
+  padding: 8px 16px;
+  font-size: 1em;
+  color: #7c4dff;
+  margin: 0 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px #e1bee744;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #f8bbd0;
+}
+.modal {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 60px;
+  transform: translateX(-50%);
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px #b388ff44;
+  width: 90%;
+  max-width: 340px;
+  padding: 18px 12px 12px 12px;
+  z-index: 10;
+}
+.modal h2 {
+  text-align: center;
+  color: #7c4dff;
+  margin-top: 0;
+}
+.close-btn {
+  margin: 0 auto;
+  display: block;
+  background: #e1bee7;
+  color: #5e35b1;
+  font-weight: bold;
+}
+#toast {
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  background: #fff3e0;
+  color: #ff6f00;
+  padding: 8px 20px;
+  border-radius: 18px;
+  font-size: 1.1em;
+  display: none;
+  box-shadow: 0 2px 10px #ffe08288;
+}
+@media (max-width: 500px) {
+  #game-container {
+    width: 98vw;
+    min-width: 0;
+    padding: 4vw 2vw 8vw 2vw;
+  }
+  #game-canvas {
+    width: 92vw !important;
+    height: 60vw !important;
+  }
+}
